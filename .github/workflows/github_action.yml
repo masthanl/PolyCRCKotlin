@@ -41,7 +41,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Build debug APK
-        run: ./gradlew assembleDebug
+        run: chmod +x ./gradlew assembleDebug
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
