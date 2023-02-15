@@ -25,9 +25,7 @@ jobs:
         - name: Checkout the code
           uses: actions/checkout@v2
 
-        - name: Assemble
-          env:
-           VERSION_CODE: ${{ github.run_id }}
+        
         - name: Run tests
           run: chmod +x ./gradlew
 
